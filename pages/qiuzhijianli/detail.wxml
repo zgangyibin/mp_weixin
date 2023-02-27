@@ -1,0 +1,73 @@
+<view class="data-v-d0d9c9ec">
+  <mescroll-uni vue-id="d9662d94-1" up="{{upOption}}" down="{{downOption}}" data-event-opts="{{[['^init',[['mescrollInit']]],['^down',[['downCallback']]],['^up',[['upCallback']]]]}}" bind:init="__e" bind:down="__e" bind:up="__e" class="data-v-d0d9c9ec" bind:__l="__l" vue-slots="{{['default']}}">
+    <view class="content data-v-d0d9c9ec">
+      <view class="container data-v-d0d9c9ec" style="{{'min-height:100vh;width:100%;padding:0px 0 132rpx;position:relative;height:auto;'}}">
+        <swiper class="swiper data-v-d0d9c9ec" style="{{'border:0px dotted #f7de91;padding:5rpx 0 40rpx ;margin:10rpx auto;border-color:#4c79ec;border-width:8rpx;width:calc(100% - 40rpx);border-style:solid;height:380rpx;'}}" indicator-dots="{{false}}" autoplay="{{true}}" circular="{{false}}" indicator-active-color="#000000" indicator-color="rgba(0, 0, 0, .3)" duration="{{500}}" interval="{{5000}}" vertical="{{false}}">
+          <block wx:for="{{$root.l0}}" wx:for-item="swiper" wx:for-index="index" wx:key="index">
+            <swiper-item style="{{'width:100%;height:360rpx;'}}" class="data-v-d0d9c9ec">
+              <block wx:if="{{swiper.g0=='http'}}">
+                <image style="{{'width:calc(100% - 40rpx);margin:0 auto;object-fit:cover;display:block;height:360rpx;'}}" mode="aspectFill" src="{{swiper.$orig}}" class="data-v-d0d9c9ec"></image>
+              </block>
+              <block wx:else>
+                <image style="{{'width:calc(100% - 40rpx);margin:0 auto;object-fit:cover;display:block;height:360rpx;'}}" mode="aspectFill" src="{{baseUrl+swiper.$orig}}" class="data-v-d0d9c9ec"></image>
+              </block>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class="detail-content data-v-d0d9c9ec" style="{{'padding:0px 24rpx 24rpx;flex-wrap:wrap;background:none;display:flex;width:100%;justify-content:space-between;height:auto;'}}">
+          <view class="detail-list-item title data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">学生姓名：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.xueshengxingming}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">学号：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.xuehao}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">性别：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.xingbie}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">年龄：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.nianling}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">专业：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.zhuanye}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">学历：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.xueli}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">毕业院校：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.biyeyuanxiao}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">外语水平：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.waiyushuiping}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">求职意向：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.qiuzhiyixiang}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">期望薪资：</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.qiwangxinzi}}</view>
+          </view>
+          <view class="detail-list-item data-v-d0d9c9ec" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">社会实践</view>
+            <view class="text data-v-d0d9c9ec" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.shehuishijian}}</view>
+          </view>
+          <view class="detail-list-item rich data-v-d0d9c9ec" style="{{'padding:24rpx 24rpx;margin:0 0 24rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-d0d9c9ec" style="{{'width:188rpx;padding:0 20rpx 0 0;line-height:1.5;font-size:28rpx;color:#4c79ec;text-align:right;'}}">个人简介</view>
+            <view class="rich-text data-v-d0d9c9ec" style="{{'min-height:240rpx;border:0px solid #f7de91;padding:0 20rpx 0 0margin:0;border-radius:8rpx;background:none;width:calc(100% - 8rpx);line-height:1.5;'}}">
+              <rich-text nodes="{{detail.gerenjianjie}}" class="data-v-d0d9c9ec"></rich-text>
+            </view>
+          </view>
+          <view class="bottom-content bg-white tabbar border shop data-v-d0d9c9ec" style="{{'width:100%;padding:20rpx 0px;flex-wrap:wrap;background:none;display:flex;height:auto;'}}"></view>
+        </view>
+      </view>
+    </view>
+  </mescroll-uni>
+</view>

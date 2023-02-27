@@ -1,0 +1,41 @@
+<view class="content data-v-73b8b06a">
+  <view style="{{'min-height:100vh;width:100%;padding:40rpx 0 240rpx;position:relative;height:auto;'}}" class="data-v-73b8b06a">
+    <view data-event-opts="{{[['tap',[['onPageTap',['../user-info/user-info']]]]]}}" class="{{['header data-v-73b8b06a',(isH5Plus)?'status':'']}}" style="{{'padding:0px 24rpx;margin:0px auto 40rpx;border-color:#4c79ec;border-radius:60rpx;border-width:8rpx;display:flex;width:calc(100% - 40rpx);border-style:solid;height:280rpx;'}}" bindtap="__e">
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view class="userinfo data-v-73b8b06a" style="{{'width:calc(100% - 112rpx);align-items:center;display:flex;height:100%;'}}">
+          <view class="info data-v-73b8b06a" style="{{'margin-left:50rpx;flex:1;flex-direction:column;justify-content:center;display:flex;height:100%;'}}">
+            <view style="{{'width:100%;line-height:36rpx;font-size:45rpx;color:#4c79ec;'}}" class="data-v-73b8b06a">{{user.xueshengxingming}}<block wx:if="{{user.vip&&user.vip=='是'}}"><text class="data-v-73b8b06a">(VIP)</text></block>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="setting data-v-73b8b06a" style="{{'width:250rpx;align-items:center;justify-content:center;display:flex;height:100%;'}}">
+        <image src="{{baseUrl+user.touxiang}}" style="{{'width:160rpx;height:160rpx;border-radius:50%;'}}"/>
+      </view>
+    </view>
+    <view class="list data-v-73b8b06a" style="{{'padding:0 24rpx 160rpx;margin:0 24rpx;flex-wrap:wrap;background:none;display:flex;width:calc(100% - 48rpx);height:auto;'}}">
+      <block wx:for="{{menuList}}" wx:for-item="item" wx:for-index="__i0__" wx:key="roleName">
+        <block class="data-v-73b8b06a">
+          <block wx:for="{{item.backMenu}}" wx:for-item="menu" wx:for-index="index" wx:key="index">
+            <block wx:if="{{role==item.roleName}}">
+              <block class="data-v-73b8b06a">
+                <block wx:for="{{menu.child}}" wx:for-item="child" wx:for-index="sort" wx:key="sort">
+                  <block class="data-v-73b8b06a">
+                    <block wx:if="{{child.tableName!='yifahuodingdan'&&child.tableName!='yituikuandingdan'&&child.tableName!='yiquxiaodingdan'&&child.tableName!='weizhifudingdan'&&child.tableName!='yizhifudingdan'&&child.tableName!='yiwanchengdingdan'&&child.tableName!='exampaper'&&child.tableName!='examquestion'}}">
+                      <view class="li data-v-73b8b06a" style="{{'padding:0 20rpx;border-color:#4c79ec;margin:0 0 20rpx;align-items:center;display:flex;border-radius:20rpx;border-width:2rpx;width:100%;line-height:80rpx;border-style:solid;height:auto;'}}" hover-class="hover" data-event-opts="{{[['tap',[['onPageTap',['../'+child.tableName+'/list?userid='+user.id]]]]]}}" bindtap="__e">
+                        <view class="text data-v-73b8b06a" style="{{'width:100%;padding:0 20rpx;line-height:88rpx;font-size:28rpx;color:#4c79ec;flex:1;'}}">{{child.menu}}</view>
+                        <block wx:if="{{true}}">
+                          <view class="cuIcon-right data-v-73b8b06a" style="{{'width:28rpx;line-height:28rpx;font-size:28rpx;color:#4c79ec;'}}"></view>
+                        </block>
+                      </view>
+                    </block>
+                  </block>
+                </block>
+              </block>
+            </block>
+          </block>
+        </block>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#4c79ec",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "w-picker": "/components/w-picker/w-picker",
+    "xia-editor": "/components/xia-editor/xia-editor"
+  },
+  "navigationBarTitleText": "宣讲会报名"
+}

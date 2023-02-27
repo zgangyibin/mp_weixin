@@ -1,0 +1,67 @@
+<view class="data-v-653f8322">
+  <mescroll-uni vue-id="564987bb-1" up="{{upOption}}" down="{{downOption}}" data-event-opts="{{[['^init',[['mescrollInit']]],['^down',[['downCallback']]],['^up',[['upCallback']]]]}}" bind:init="__e" bind:down="__e" bind:up="__e" class="data-v-653f8322" bind:__l="__l" vue-slots="{{['default']}}">
+    <view class="content data-v-653f8322">
+      <view class="container data-v-653f8322" style="{{'min-height:100vh;width:100%;padding:0px 0 132rpx;position:relative;height:auto;'}}">
+        <swiper class="swiper data-v-653f8322" style="{{'padding:5px 0 40rpx ;margin:10rpx auto;border-color:#4c79ec;border-width:8rpx;width:calc(100% - 40rpx);border-style:solid;height:380rpx;'}}" indicator-dots="{{false}}" autoplay="{{true}}" circular="{{false}}" indicator-active-color="#000000" indicator-color="rgba(0, 0, 0, .3)" duration="{{500}}" interval="{{5000}}" vertical="{{false}}">
+          <block wx:for="{{$root.l0}}" wx:for-item="swiper" wx:for-index="index" wx:key="index">
+            <swiper-item style="{{'width:100%;border-radius:0px 0px 10% 10%;background:none;height:360rpx;'}}" class="data-v-653f8322">
+              <block wx:if="{{swiper.g0=='http'}}">
+                <image style="{{'width:calc(100% - 40rpx);margin:0 auto;object-fit:cover;border-radius:0 0 20rpx 20rpx;display:block;height:360rpx;'}}" mode="aspectFill" src="{{swiper.$orig}}" class="data-v-653f8322"></image>
+              </block>
+              <block wx:else>
+                <image style="{{'width:calc(100% - 40rpx);margin:0 auto;object-fit:cover;border-radius:0 0 20rpx 20rpx;display:block;height:360rpx;'}}" mode="aspectFill" src="{{baseUrl+swiper.$orig}}" class="data-v-653f8322"></image>
+              </block>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class="detail-content data-v-653f8322" style="{{'padding:0px 24rpx 24rpx;flex-wrap:wrap;background:none;display:flex;width:100%;justify-content:space-between;height:auto;'}}">
+          <view class="detail-list-item title data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">学生姓名：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.xueshengxingming}}</view>
+          </view>
+          <view class="detail-list-item title data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">就业岗位：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.jiuyegangwei}}</view>
+          </view>
+          <view class="detail-list-item title data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">就业日期：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.jiuyeriqi}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">学号：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.xuehao}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">性别：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.xingbie}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">手机号码：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.shoujihaoma}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">专业：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.zhuanye}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">就业企业：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.jiuyeqiye}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">企业地址：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.qiyedizhi}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">备注：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.beizhu}}</view>
+          </view>
+          <view class="detail-list-item data-v-653f8322" style="{{'margin:20rpx 0 20rpx 0;border-color:#4c79ec;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+            <view class="lable data-v-653f8322" style="{{'padding:0 20rpx 0 0;color:#4c79ec;text-align:right;width:188rpx;line-height:80rpx;font-size:28rpx;min-width:188rpx;'}}">登记时间：</view>
+            <view class="text data-v-653f8322" style="{{'padding:0px 20rpx 20rpx 0;margin:16rpx 0 0;line-height:48rpx;font-size:28rpx;color:rgb(0, 0, 0);'}}">{{detail.dengjishijian}}</view>
+          </view>
+          <view class="bottom-content bg-white tabbar border shop data-v-653f8322" style="{{'width:100%;padding:20rpx 0px;flex-wrap:wrap;background:none;display:flex;height:auto;'}}"></view>
+        </view>
+      </view>
+    </view>
+  </mescroll-uni>
+</view>

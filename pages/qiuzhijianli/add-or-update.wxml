@@ -1,0 +1,57 @@
+<view class="content data-v-7eb47469">
+  <view style="{{'min-height:100vh;width:100%;padding:0 0 240rpx;position:relative;height:auto;'}}" class="data-v-7eb47469">
+    <form class="app-update-pv data-v-7eb47469" style="{{'width:100%;padding:60rpx 40rpx;display:block;height:auto;'}}">
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">学号</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.xuehao}}" placeholder="学号" data-event-opts="{{[['input',[['__set_model',['$0','xuehao','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.xuehao}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">学生姓名</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.xueshengxingming}}" placeholder="学生姓名" data-event-opts="{{[['input',[['__set_model',['$0','xueshengxingming','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.xueshengxingming}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view data-event-opts="{{[['tap',[['touxiangTap',['$event']]]]]}}" style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" bindtap="__e" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">头像</view>
+        <block wx:if="{{ruleForm.touxiang}}">
+          <image class="avator data-v-7eb47469" style="{{'width:80rpx;border-radius:100%;object-fit:cover;display:block;height:80rpx;'}}" src="{{baseUrl+$root.g0[0]}}" mode="aspectFill"></image>
+        </block>
+        <block wx:else>
+          <image class="avator data-v-7eb47469" style="{{'width:80rpx;border-radius:100%;object-fit:cover;display:block;height:80rpx;'}}" src="../../static/gen/upload.png" mode="aspectFill"></image>
+        </block>
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">性别</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.xingbie}}" placeholder="性别" data-event-opts="{{[['input',[['__set_model',['$0','xingbie','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.xingbie}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">年龄</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.nianling}}" placeholder="年龄" data-event-opts="{{[['input',[['__set_model',['$0','nianling','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.nianling}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">专业</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.zhuanye}}" placeholder="专业" data-event-opts="{{[['input',[['__set_model',['$0','zhuanye','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.zhuanye}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">学历</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.xueli}}" placeholder="学历" data-event-opts="{{[['input',[['__set_model',['$0','xueli','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.xueli}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">毕业院校</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.biyeyuanxiao}}" placeholder="毕业院校" data-event-opts="{{[['input',[['__set_model',['$0','biyeyuanxiao','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.biyeyuanxiao}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">外语水平</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.waiyushuiping}}" placeholder="外语水平" data-event-opts="{{[['input',[['__set_model',['$0','waiyushuiping','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.waiyushuiping}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view class=" select data-v-7eb47469" style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">求职意向</view>
+        <picker style="{{'width:100%;flex:1;height:auto;'}}" value="{{qiuzhiyixiangIndex}}" range="{{qiuzhiyixiangOptions}}" data-event-opts="{{[['change',[['qiuzhiyixiangChange',['$event']]]]]}}" bindchange="__e" class="data-v-7eb47469">
+          <view class="uni-input data-v-7eb47469" style="{{'width:100%;line-height:80rpx;font-size:28rpx;color:#666;'}}">{{ruleForm.qiuzhiyixiang?ruleForm.qiuzhiyixiang:"请选择求职意向"}}</view>
+        </picker>
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:baseline;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;line-height:80rpx;font-size:28rpx;color:#4c79ec;text-align:right;'}}">期望薪资</view><input style="{{'border:0;padding:0px 24rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;height:80rpx;'}}" disabled="{{ro.qiwangxinzi}}" placeholder="期望薪资" data-event-opts="{{[['input',[['__set_model',['$0','qiwangxinzi','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.qiwangxinzi}}" bindinput="__e" class="data-v-7eb47469" />
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 20rpx 0;border-color:#4c79ec;align-items:top;border-radius:20rpx;border-width:2rpx;display:flex;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:160rpx;padding:0 20rpx 0 0;font-size:28rpx;color:#4c79ec;text-align:right;'}}">社会实践</view>
+        <textarea style="{{'border:0;min-height:240rpx;padding:24rpx 40rpx;margin:0px;color:#666;border-radius:8rpx;flex:1;font-size:28rpx;'}}" placeholder="社会实践" data-event-opts="{{[['input',[['__set_model',['$0','shehuishijian','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.shehuishijian}}" bindinput="__e" class="data-v-7eb47469"></textarea>
+      </view>
+      <view style="{{'padding:12rpx 0;margin:0 0 24rpx 0;border-color:#ccc;border-width:0 0 0px 0;width:100%;border-style:solid;height:auto;'}}" class="data-v-7eb47469">
+        <view class="title data-v-7eb47469" style="{{'width:100%;line-height:80rpx;font-size:28rpx;color:#4c79ec;font-weight:500;'}}">个人简介</view>
+        <xia-editor style="{{'min-height:300rpx;padding:24rpx 40rpx;border-width:0;width:100%;border-style:solid;height:auto;'}}" vue-id="4b51606e-1" placeholder="个人简介" value="{{ruleForm.gerenjianjie}}" data-event-opts="{{[['^editorChange',[['gerenjianjieChange']]],['^input',[['__set_model',['$0','gerenjianjie','$event',[]],['ruleForm']]]]]}}" bind:editorChange="__e" bind:input="__e" class="data-v-7eb47469" bind:__l="__l"></xia-editor>
+      </view>
+      <view class="btn data-v-7eb47469" style="{{'width:100%;margin:40rpx 0 0 0;justify-content:center;display:flex;height:auto;'}}"><button data-event-opts="{{[['tap',[['onSubmitTap',['$event']]]]]}}" class="bg-red data-v-7eb47469" style="{{'border:0;padding:0 40rpx;margin:0 40rpx 0 0;color:#fff;border-radius:16rpx;background:#4c79ec;display:inline;width:auto;line-height:80rpx;font-size:28rpx;height:80rpx;'}}" bindtap="__e">提交</button></view>
+    </form>
+  </view>
+</view>

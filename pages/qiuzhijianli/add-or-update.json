@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#4c79ec",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "xia-editor": "/components/xia-editor/xia-editor",
+    "w-picker": "/components/w-picker/w-picker"
+  },
+  "navigationBarTitleText": "简历编辑"
+}

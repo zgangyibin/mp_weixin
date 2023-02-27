@@ -1,0 +1,53 @@
+<view class="content">
+  <view class="box">
+    <view style="{{'padding:60rpx 40rpx;display:block;width:100%;'}}">
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view class="uni-form-item uni-column" style="{{'width:100%;margin:0 0 20rpx 0;height:auto;'}}">
+          <input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;border-width:2rpx;font-size:28rpx;border-style:solid;height:80rpx;'}}" type="text" name placeholder="学号" data-event-opts="{{[['input',[['__set_model',['$0','xuehao','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.xuehao}}" bindinput="__e" />
+        </view>
+      </block>
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view class="uni-form-item uni-column" style="{{'width:100%;margin:0 0 20rpx 0;height:auto;'}}">
+          <input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;border-width:2rpx;font-size:28rpx;border-style:solid;height:80rpx;'}}" type="password" name placeholder="密码" data-event-opts="{{[['input',[['__set_model',['$0','mima','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.mima}}" bindinput="__e" />
+        </view>
+      </block>
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view class="uni-form-item uni-column" style="{{'width:100%;margin:0 0 20rpx 0;height:auto;'}}">
+          <input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;border-width:2rpx;font-size:28rpx;border-style:solid;height:80rpx;'}}" type="password" name placeholder="确认密码" data-event-opts="{{[['input',[['__set_model',['$0','mima2','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.mima2}}" bindinput="__e" />
+        </view>
+      </block>
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view class="uni-form-item uni-column" style="{{'width:100%;margin:0 0 20rpx 0;height:auto;'}}">
+          <input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;border-width:2rpx;font-size:28rpx;border-style:solid;height:80rpx;'}}" type="text" name placeholder="学生姓名" data-event-opts="{{[['input',[['__set_model',['$0','xueshengxingming','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.xueshengxingming}}" bindinput="__e" />
+          </view>
+      </block>
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view data-event-opts="{{[['tap',[['xueshengtouxiangTap',['$event']]]]]}}" style="{{'width:100%;margin:0 0 20rpx 0;height:auto;'}}" bindtap="__e" class="">
+          <view class="">请上传头像</view>
+          <block wx:if="{{ruleForm.touxiang}}">
+            <image class="avator" style="{{'border:2rpx solid #4c79ec;padding:8rpx;border-radius:16rpx;object-fit:cover;display:block;width:200rpx;height:160rpx;'}}" src="{{baseUrl+ruleForm.touxiang}}" mode></image>
+          </block>
+          <block wx:else>
+            <image class="avator" style="{{'border:2rpx solid #4c79ec;padding:8rpx;border-radius:16rpx;object-fit:cover;display:block;width:200rpx;height:160rpx;'}}" src="../../static/gen/upload.png" mode></image>
+          </block>
+        </view>
+      </block>
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <picker style="{{'margin:24rpx 0 24rpx 0;border-color:#4c79ec;border-width:2rpx;width:100%;border-style:solid;height:auto;'}}" value="{{xueshengxingbieIndex}}" range="{{xueshengxingbieOptions}}" data-event-opts="{{[['change',[['xueshengxingbieChange',['$event']]]]]}}" bindchange="__e" class="">
+          <view class="uni-input" style="{{'width:100%;padding:0 24rpx;line-height:80rpx;font-size:28rpx;color:#767676;'}}">{{ruleForm.xingbie?ruleForm.xingbie:"请选择性别"}}</view>
+        </picker>
+      </block>
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view class="uni-form-item uni-column" style="{{'width:100%;margin:0 0 20rpx 0;height:auto;'}}">
+          <input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;border-width:2rpx;font-size:28rpx;border-style:solid;height:80rpx;'}}" type="text" name placeholder="手机号码" data-event-opts="{{[['input',[['__set_model',['$0','shoujihaoma','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.shoujihaoma}}" bindinput="__e" />
+        </view>
+      </block>
+      <block wx:if="{{tableName=='xuesheng'}}">
+        <view class="uni-form-item uni-column" style="{{'width:100%;margin:0 0 20rpx 0;height:auto;'}}">
+          <input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;border-width:2rpx;width:100%;font-size:28rpx;border-style:solid;height:80rpx;'}}" type="text" name placeholder="邮箱" data-event-opts="{{[['input',[['__set_model',['$0','youxiang','$event',[]],['ruleForm']]]]]}}" value="{{ruleForm.youxiang}}" bindinput="__e" />
+        </view>
+      </block>
+      <button class="btn-submit" style="{{'border:0;padding:0px;margin:24rpx 0 24rpx 0;color:#fff;border-radius:12rpx;background:#4c79ec;width:100%;line-height:88rpx;font-size:32rpx;height:88rpx;'}}" type="primary" data-event-opts="{{[['tap',[['register',['$event']]]]]}}" bindtap="__e">注册</button>
+    </view>
+  </view>
+</view>

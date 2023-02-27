@@ -1,0 +1,17 @@
+<view class="content">
+  <view class="box" style="{{'min-height:100vh;width:100%;padding:360rpx 80rpx 80rpx;background:cornflowerblue;height:100%;'}}">
+    <view style="{{'padding:60rpx 40rpx;box-shadow:2rpx 4rpx 16rpx #ddd;border-radius:12rpx;background:#fff;display:block;width:100%;height:auto;'}}" class="data-v-5ce367a0">
+      <view class="uni-form-item uni-column" style="{{'margin:0 0 20rpx;border-radius:8rpx 8rpx 0 0;background:#fff;height:auto;'}}"><input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;color:rgb(0, 0, 0);border-radius:12rpx;background:none;border-width:2rpx;width:100%;font-size:28rpx;border-style:solid;height:88rpx;'}}" type="text" name placeholder="请输入账号" data-event-opts="{{[['input',[['__set_model',['','username','$event',[]]]]]]}}" value="{{username}}" bindinput="__e" /></view>
+      <view class="uni-form-item uni-column" style="{{'margin:0 0 20rpx;border-radius:8rpx 8rpx 0 0;background:#fff;height:auto;'}}"><input class="uni-input" style="{{'padding:0px 24rpx;margin:0px;border-color:#4c79ec;color:rgb(0, 0, 0);border-radius:12rpx;background:none;border-width:2rpx;width:100%;font-size:28rpx;border-style:solid;height:88rpx;'}}" type="password" name placeholder="请输入密码" data-event-opts="{{[['input',[['__set_model',['','password','$event',[]]]]]]}}" value="{{password}}" bindinput="__e" /></view>
+      <block wx:if="{{roleNum>1}}">
+        <picker style="{{'margin:0 0 48rpx 0;border-color:#4c79ec;border-radius:12rpx;background:#fff;border-width:2rpx;width:100%;border-style:solid;height:auto;'}}" value="{{index}}" range="{{options}}" data-event-opts="{{[['change',[['optionsChange',['$event']]]]]}}" bindchange="__e" class="data-v-5ce367a0">
+          <view class="uni-picker-type" style="{{'padding:0 24rpx;line-height:88rpx;font-size:28rpx;color:#767676;'}}">{{options[index]}}</view>
+        </picker>
+      </block>
+      <button class="btn-submit" style="{{'border:0;padding:0px;margin:0 0 24rpx 0;color:#fff;border-radius:12rpx;background:#4c79ec;width:100%;line-height:88rpx;font-size:32rpx;height:88rpx;'}}" type="primary" data-event-opts="{{[['tap',[['onLoginTap',['$event']]]]]}}" bindtap="__e">登录</button>
+      <view class="links" style="{{'margin:0 0 0px 0;flex-wrap:wrap;display:flex;height:auto;'}}">
+        <view data-event-opts="{{[['tap',[['onRegisterTap',['xuesheng']]]]]}}" class="link-highlight" style="{{'margin:0 auto;color:#333;font-size:28rpx;'}}" bindtap="__e">注册学生</view>
+      </view>
+    </view>
+  </view>
+</view>

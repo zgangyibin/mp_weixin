@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#4c79ec",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  },
+  "navigationBarTitleText": "应聘信息"
+}
